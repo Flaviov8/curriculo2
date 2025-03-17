@@ -1,0 +1,182 @@
+:root  {
+    --primary-color: rgb(145, 24, 145);
+    --primary-color-darker: rgb(8, 2, 2);
+    
+ }
+ 
+ 
+ * {
+     box-sizing: border-box;
+     outline: 0;
+     
+ }
+ 
+ body {
+     background-color: rgb(33, 32, 32);
+     color: white;
+     margin: 0;
+     padding: 0;
+     background: var(--primary-color);
+     font-family: 'Open sans', sans-serif;
+     font-size: 1.3em;
+     line-height: 1.5em;
+ 
+     min-width: 320px;
+     max-width: 800px;
+     margin: auto;
+     
+ }
+
+ 
+ #vovo {
+     position: fixed;
+     bottom: 0px;
+     float: right;
+     right: 5px;
+     z-index: 10;
+     height: 100px;
+     width: 120px;
+     
+     margin-top: 15px;
+     margin-bottom: 5px;
+     animation: go-back 4s;
+ 
+ }
+ 
+ @keyframes go-back {
+     from {
+         transform: translateX(100px);
+     }
+     to {
+         transform: translateX(0);
+     }
+     
+ }	
+ 
+ 
+ .container {
+ 
+     max-width: 640px;
+     margin: 50px auto;
+     background: rgba(230, 142, 230, 0.308);
+     padding: 20px;
+     border-radius: 10px;
+   
+     
+ }
+ 
+ form input, form label, form button {
+     display: block;
+     width: 100%;
+     margin-bottom: 10px;
+ }
+ 
+ form input {
+     font-size: 24px;
+     height: 50px;
+     padding: 0 20px;
+     border-radius: 8px;
+ }
+ 
+ form input:focus {
+  outline: 1px solid var (--primary-color);
+ }
+ 
+ .form textarea {
+     min-height: 13rem;
+     resize: vertical;
+ }
+ 
+ 
+ form button {
+ border: none;
+ background: var(--primary-color);
+ color: white;
+ font-size: 18px;
+ font-weight: 700; 
+ height: 50px;
+ cursor: pointer;
+ margin-top: 30px;
+ border-radius: 8px;
+ 
+ }
+ 
+ form button:hover {
+     background: var(--primary-color-darker);
+ }
+ 
+ form button:active {
+     background: var (--primary-color-darker);
+ }
+ 
+ 
+ 
+ .form textarea {
+     min-height: 13rem;
+     resize: vertical;
+ }
+ 
+ .form input:hover,
+ .form input:focus,
+ .form textarea:hover,
+ .form textarea:focus{
+     outline: none;
+    
+     
+ }
+ 
+ 
+ 
+ form {
+     
+     font-weight: bold;    
+     padding-left: 12px;
+     font-size: 20px;
+     color: #FFFFFF;
+     text-shadow: 
+                -1px -1px 0px #000000, 
+                -1px 1px 0px #000000,                    
+                 1px -1px 0px #000000,                  
+                 1px 0px 0px #000000;
+   
+   
+     }
+ 
+ 
+  
+   button:hover {
+     background:linear-gradient(to bottom, #e4685d 5%, #fc8d83 100%);
+     background-color:#e4685d;       
+  }
+ 
+   button:active {
+     position:relative;
+     top:1px;
+ }
+ 
+   input[type="checkbox"] {
+     
+     margin-right: 20px;
+ }
+ 
+   li {
+     list-style-type: none;
+     font-size: 30px;
+     color: #000;
+     height: 200px;
+     padding: 100px;
+     text-shadow: 
+                -1px -1px 1px #DDA0DD, 
+                -1px 1px 1px #DDA0DD,                    
+                 1px -1px 0px #DDA0DD,                  
+                 1px 0px 0px #DDA0DD;
+ }
+ 
+ 
+ 
+ iframe {
+  position:0;
+  top: 50%px;
+  left: 50%;
+  transform: translate(20%, 2%);
+ }
